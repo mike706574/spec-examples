@@ -1,6 +1,7 @@
-(ns example.seven
-  (:require [clojure.test :refer [deftest is]]
-            [example.seven :refer [offers-for]]))
+(ns example.eight
+  (:require [example.seven :refer [offers-for]]
+            [clojure.test :refer [deftest is]]
+            [clojure.spec.test.alpha :as stest]))
 
 ;; our function, but broken:
 (def laser-gun {:code "LG"
